@@ -7,6 +7,8 @@ import static java.lang.Integer.MAX_VALUE;
 
 public class DijkstraImpl implements Dijkstra {
 
+    private static final int MAX_VALUE = Integer.MAX_VALUE;
+
     @Override
     public Map<Integer, Integer> planning(int start, Map<Integer, List<Edge>> graph) {
         return graphPlanning(start, graph);

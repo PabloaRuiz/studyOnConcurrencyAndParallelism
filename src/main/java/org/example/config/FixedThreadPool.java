@@ -1,7 +1,8 @@
 package org.example.config;
 
-import org.example.Threads.GerenciandoThreads.Challenge.domain.DijkstraImpl;
-import org.example.Threads.GerenciandoThreads.Challenge.domain.Edge;
+
+import org.example.domain.DijkstraImpl;
+import org.example.domain.Edge;
 
 import java.util.List;
 import java.util.Map;
@@ -18,14 +19,13 @@ public class FixedThreadPool implements ThreadExecutor {
 
     @Override
     public Future<Map<Integer, Integer>> submit(DijkstraImpl dijkstra, Map<Integer, List<Edge>> edges) {
-        return  pool.submit(() -> dijkstra.planning(0, edges));
+        return pool.submit(() -> dijkstra.planning(0, edges));
     }
 
     @Override
     public CompletableFuture<Map<Integer, Integer>> submitAsync(DijkstraImpl dijkstra, Map<Integer, List<Edge>> edges) {
-       return dijkstra.planningAsync(0,edges);
+        return dijkstra.planningAsync(0, edges);
     }
-
 
     @Override
     public void shutdown() {

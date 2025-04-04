@@ -1,7 +1,7 @@
 package org.example.config;
 
-import org.example.Threads.GerenciandoThreads.Challenge.domain.DijkstraImpl;
-import org.example.Threads.GerenciandoThreads.Challenge.domain.Edge;
+import org.example.domain.DijkstraImpl;
+import org.example.domain.Edge;
 
 import java.util.List;
 import java.util.Map;
