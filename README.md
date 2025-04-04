@@ -1,6 +1,6 @@
 # Concurrent Seat Reservation System (CompletableFuture & Threading)
 
-Este projeto simula um sistema de **reserva de assentos** usando Java moderno e técnicas avançadas de **concorrência com `CompletableFuture`**, além de simular envio de e-mail e realizar testes e benchmarks reais de performance com **JMH**.
+Este projeto simula um sistema de **reserva de assentos** usando Java moderno e técnicas avançadas de **concorrência com `CompletableFuture`**, e realizar testes de benchmarks reais de performance com **JMH**.
 
 ## 🚀 Objetivo
 
