@@ -21,6 +21,9 @@ jobs:
       - name: Build do projeto e testes
         run: mvn clean verify
 
+      - name: verificando testes de Benchmark
+        run: java -jar target/benchmarks.jar
+
       - name: Upload cobertura JaCoCo para o Codecov
         uses: codecov/codecov-action@v5
         with:
