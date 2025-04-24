@@ -28,3 +28,9 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+      
+      - name: create tag release
+        uses: mathieudutour/github-tag-action@v6.2
+        with: 
+         tag_prefix: "v"
+         release_branches: main
